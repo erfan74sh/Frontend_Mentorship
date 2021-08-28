@@ -1,6 +1,6 @@
-*Frontend Mentorship
+#Frontend Mentorship
 
 This Repo is for frontend mentorship projects.
 <hr>
 
-<p align="center">*Mentored by __[Danial Salahi](https://github.com/dansalahi)__*</p>
+<em align="center">Mentored by <a href="https://github.com/dansalahi"><b>Danial Salahi</b></a></em>
