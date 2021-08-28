@@ -1,12 +1,76 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>ToDo List</title>
-</head>
-<body>
-  
-</body>
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>ToDo List</title>
+		<link rel="stylesheet" href="./style.css" />
+		<!-- google font -->
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+			rel="stylesheet"
+		/>
+		<!-- fonawsome CDN -->
+		<link
+			rel="stylesheet"
+			href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+			integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm"
+			crossorigin="anonymous"
+		/>
+	</head>
+	<body>
+		<div class="container">
+			<h1 id="title">task manager</h1>
+			<div id="task-container">
+				<form id="task-input">
+					<input type="text" placeholder="Title" />
+					<button>ADD</button>
+				</form>
+				<div id="tasks-div">
+					<div class="task-div">
+						<p class="task">task 1</p>
+						<div class="edit-options">
+							<button class="edit-but">
+								<span>edit</span><i class="fas fa-pen fa-xs"></i>
+							</button>
+							<button class="icon delete-but">
+								<span>delete</span><i class="fas fa-trash fa-xs"></i>
+							</button>
+						</div>
+					</div>
+					<div class="task-div">
+						<p class="task">task 2</p>
+						<div class="edit-options">
+							<button class="edit-but">
+								<span>edit</span><i class="fas fa-pen fa-xs"></i>
+							</button>
+							<button class="delete-but">
+								<span>delete</span><i class="fas fa-trash fa-xs"></i>
+							</button>
+						</div>
+					</div>
+					<div class="task-div">
+						<p class="task">task 3</p>
+						<div class="edit-options">
+							<button class="edit-but">
+								<span>edit</span><i class="fas fa-pen fa-xs"></i>
+							</button>
+							<button class="delete-but">
+								<span>delete</span><i class="fas fa-trash fa-xs"></i>
+							</button>
+						</div>
+					</div>
+				</div>
+				<h5 id="footer">
+					frontend mentorship cource by
+					<a href="https://github.com/dansalahi" target="_blank"
+						><em><b>danial salahi</b></em></a
+					>
+				</h5>
+			</div>
+		</div>
+	</body>
 </html>
