@@ -350,6 +350,13 @@ main > h1 {
   transition: all 200ms ease;
 }
 
+#more-to-explore-sec #more-to-explore-items .more-to-explore-item .more-to-explore-item-image .liked i {
+  color: #e61c1c;
+  font-weight: bold;
+  font-size: 2.1rem;
+  text-shadow: 2px 2px 4px rgba(230, 28, 28, 0.411), -2px -2px 4px rgba(230, 28, 28, 0.411), 2px 0 4px rgba(230, 28, 28, 0.411), 0 2px 4px rgba(230, 28, 28, 0.411);
+}
+
 #more-to-explore-sec #more-to-explore-items .more-to-explore-item .more-to-explore-item-image span {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -373,13 +380,13 @@ main > h1 {
   border-radius: 50%;
 }
 
-#more-to-explore-sec #more-to-explore-items .more-to-explore-item .more-to-explore-item-image span:hover i {
-  color: #e61c1c;
-  font-weight: bold;
-  font-size: 2.1rem;
+#more-to-explore-sec #more-to-explore-items .more-to-explore-item .more-to-explore-item-image span i {
+  position: relative;
+  -webkit-transition: all 300ms ease;
+  transition: all 300ms ease;
 }
 
-#more-to-explore-sec #more-to-explore-items .more-to-explore-item .more-to-explore-item-image span::before, #more-to-explore-sec #more-to-explore-items .more-to-explore-item .more-to-explore-item-image span::after {
+#more-to-explore-sec #more-to-explore-items .more-to-explore-item .more-to-explore-item-image span::before {
   content: "";
   position: absolute;
   top: 0;
@@ -389,20 +396,6 @@ main > h1 {
   -webkit-transition: all 250ms ease;
   transition: all 250ms ease;
   border-radius: 50%;
-}
-
-#more-to-explore-sec #more-to-explore-items .more-to-explore-item .more-to-explore-item-image span i {
-  position: relative;
-  -webkit-transition: all 300ms ease;
-  transition: all 300ms ease;
-}
-
-#more-to-explore-sec #more-to-explore-items .more-to-explore-item .more-to-explore-item-image span::after {
-  -webkit-box-shadow: inset 0 0 0 0 #fff;
-          box-shadow: inset 0 0 0 0 #fff;
-}
-
-#more-to-explore-sec #more-to-explore-items .more-to-explore-item .more-to-explore-item-image span::before {
   background: #ffa6a6;
   -webkit-box-shadow: inset 0 0 0 4rem #fff;
           box-shadow: inset 0 0 0 4rem #fff;

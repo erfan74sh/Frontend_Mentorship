@@ -208,6 +208,15 @@ main {
 				height: 60%;
 				position: relative;
 				@include transition(200ms);
+				.liked i {
+					color: rgb(230, 28, 28);
+					font-weight: bold;
+					font-size: 2.1rem;
+					text-shadow: 2px 2px 4px rgba(230, 28, 28, 0.411),
+						-2px -2px 4px rgba(230, 28, 28, 0.411),
+						2px 0 4px rgba(230, 28, 28, 0.411),
+						0 2px 4px rgba(230, 28, 28, 0.411);
+				}
 				span {
 					@include flexElement(center, center);
 					position: absolute;
@@ -217,13 +226,11 @@ main {
 					width: 4rem;
 					height: 4rem;
 					border-radius: 50%;
-					&:hover i {
-						color: rgb(230, 28, 28);
-						font-weight: bold;
-						font-size: 2.1rem;
+					i {
+						position: relative;
+						@include transition;
 					}
-					&::before,
-					&::after {
+					&::before {
 						content: "";
 						position: absolute;
 						top: 0;
@@ -232,15 +239,6 @@ main {
 						width: 100%;
 						@include transition(250ms);
 						border-radius: 50%;
-					}
-					i {
-						position: relative;
-						@include transition;
-					}
-					&::after {
-						box-shadow: inset 0 0 0 0 $ligth-color;
-					}
-					&::before {
 						background: rgb(255, 166, 166);
 						box-shadow: inset 0 0 0 4rem $ligth-color;
 					}
