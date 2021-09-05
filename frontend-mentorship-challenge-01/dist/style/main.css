@@ -64,7 +64,8 @@ header {
 }
 
 #header-title {
-  width: 35%;
+  width: 40%;
+  padding: 0 3rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -93,6 +94,7 @@ header {
   font-family: "Rosario", sans-serif;
   color: #fff;
   text-shadow: 2px 5px 10px rgba(0, 0, 0, 0.3);
+  text-align: center;
 }
 
 #header-title button {
