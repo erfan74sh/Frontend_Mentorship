@@ -90,11 +90,37 @@ header {
 }
 
 #header-title h1 {
+  position: absolute;
   font-size: 4rem;
   font-family: "Rosario", sans-serif;
   color: #fff;
   text-shadow: 2px 5px 10px rgba(0, 0, 0, 0.3);
   text-align: center;
+  bottom: 100%;
+  -webkit-animation: moveBot 1s ease-in-out 100ms 1 forwards;
+          animation: moveBot 1s ease-in-out 100ms 1 forwards;
+}
+
+@-webkit-keyframes moveBot {
+  0% {
+    opacity: 0;
+    bottom: 300%;
+  }
+  100% {
+    opacity: 1;
+    bottom: 100%;
+  }
+}
+
+@keyframes moveBot {
+  0% {
+    opacity: 0;
+    bottom: 300%;
+  }
+  100% {
+    opacity: 1;
+    bottom: 100%;
+  }
 }
 
 #header-title button {
@@ -584,6 +610,9 @@ footer hr {
     width: 100%;
     height: 32%;
   }
+  .get-more-sec-caption {
+    bottom: 40% !important;
+  }
   #more-to-explore-sec {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -646,8 +675,20 @@ footer hr {
 
 @media only screen and (max-width: 600px) {
   .get-more-sec-caption {
-    bottom: 45% !important;
+    -webkit-transform: translateY(-30%);
+            transform: translateY(-30%);
+    bottom: 50% !important;
     text-align: center;
+    padding: 3rem 1rem !important;
+  }
+  .get-more-sec-caption h1 {
+    font-size: 4rem !important;
+  }
+  #more-to-explore-sec {
+    height: 160vh !important;
+  }
+  footer {
+    padding: 3rem 1rem !important;
   }
   footer p {
     text-align: center;
@@ -657,17 +698,31 @@ footer hr {
     -webkit-box-direction: normal !important;
         -ms-flex-direction: column !important;
             flex-direction: column !important;
+    height: auto;
   }
   #footer-nav #footer-list,
   #footer-nav #footer-socials {
     width: 100%;
+    -webkit-box-orient: vertical !important;
+    -webkit-box-direction: normal !important;
+        -ms-flex-direction: column !important;
+            flex-direction: column !important;
+    -webkit-box-align: center !important;
+        -ms-flex-align: center !important;
+            align-items: center !important;
+  }
+  #footer-nav #footer-socials {
     -webkit-box-orient: horizontal !important;
     -webkit-box-direction: normal !important;
         -ms-flex-direction: row !important;
             flex-direction: row !important;
-    -webkit-box-align: center !important;
-        -ms-flex-align: center !important;
-            align-items: center !important;
+    -webkit-box-pack: space-evenly !important;
+        -ms-flex-pack: space-evenly !important;
+            justify-content: space-evenly !important;
+    margin-top: 1rem;
+  }
+  #footer-nav #footer-socials :first-child {
+    margin: 0 !important;
   }
 }
 /*# sourceMappingURL=main.css.map */
