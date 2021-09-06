@@ -18,3 +18,13 @@
 	border-radius: 1rem;
 	box-shadow: inset 0 0 20px 5px $ligth-color;
 }
+
+@mixin keyFrames($name) {
+	@keyframes #{$name} {
+		@content;
+	}
+}
+
+@mixin animate($name, $duration, $timing, $delay, $iterCount, $fill) {
+	animation: $name $duration $timing $delay $iterCount $fill;
+}
