@@ -19,6 +19,9 @@
 			height: 32%;
 		}
 	}
+	.get-more-sec-caption {
+		bottom: 40% !important;
+	}
 
 	#more-to-explore-sec {
 		@include flexElement(center, center, column);
@@ -54,20 +57,40 @@
 
 @media only screen and (max-width: 600px) {
 	.get-more-sec-caption {
-		bottom: 45% !important;
+		transform: translateY(-30%);
+		bottom: 50% !important;
 		text-align: center;
+		padding: 3rem 1rem !important;
+		h1 {
+			font-size: 4rem !important;
+		}
+	}
+	#more-to-explore-sec {
+		height: 160vh !important;
 	}
 
-	footer p {
-		text-align: center;
+	footer {
+		padding: 3rem 1rem !important;
+		p {
+			text-align: center;
+		}
 	}
 	#footer-nav {
 		flex-direction: column !important;
+		height: auto;
 		#footer-list,
 		#footer-socials {
 			width: 100%;
-			flex-direction: row !important;
+			flex-direction: column !important;
 			align-items: center !important;
+		}
+		#footer-socials {
+			flex-direction: row !important;
+			justify-content: space-evenly !important;
+			margin-top: 1rem;
+			:first-child {
+				margin: 0 !important;
+			}
 		}
 	}
 }
