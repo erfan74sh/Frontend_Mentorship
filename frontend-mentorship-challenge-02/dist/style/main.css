@@ -152,6 +152,29 @@ form .form-item:not(:last-child) {
   margin-bottom: 1.4rem;
 }
 
+form .form-item .input-div {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  border-radius: 1.5rem;
+}
+
+form .form-item .input-div .vertical-line {
+  position: absolute;
+  bottom: 0;
+  display: block;
+  width: 0;
+  height: 100%;
+  background-color: #3498db;
+  opacity: 0.6;
+  -webkit-transition: all 300ms ease;
+  transition: all 300ms ease;
+}
+
+form .form-item .input-div input:focus ~ .vertical-line {
+  width: 1rem;
+}
+
 form .form-item input.w-100 {
   width: 100%;
   padding: 1.6rem 2rem;
@@ -160,11 +183,17 @@ form .form-item input.w-100 {
 
 form .form-item input[type="submit"] {
   width: 90%;
-  margin: 0 auto;
   padding: 1.6rem;
   background-color: #3498db;
-  border-radius: 1rem;
   color: #fff;
+  border-radius: 1rem;
+  cursor: pointer;
+  -webkit-transition: all 300ms ease;
+  transition: all 300ms ease;
+}
+
+form .form-item input[type="submit"]:hover {
+  background-color: #258cd1;
 }
 
 form .form-item input[type="checkbox"] {
@@ -182,13 +211,13 @@ form .form-item input[type="checkbox"]:checked ~ .checkbox-checkmark {
 }
 
 form .form-item .checkbox-checkmark {
-  position: absolute;
+  position: relative;
+  display: inline-block;
   top: 5%;
   left: 0;
   width: 1.6rem;
   height: 1.6rem;
   border-radius: 25%;
-  margin-left: 2rem;
   background: linear-gradient(145deg, #9c9696, #837e7e);
   -webkit-box-shadow: 20px 20px 60px #7c7777, -20px -20px 60px #a8a1a1;
           box-shadow: 20px 20px 60px #7c7777, -20px -20px 60px #a8a1a1;
@@ -238,22 +267,20 @@ form .form-item input[type="date"]::-webkit-calendar-picker-indicator {
   cursor: pointer;
 }
 
-form .form-item input[type="submit"] {
-  cursor: pointer;
-}
-
-form .form-item label {
+form .form-item label:not(.gender-opt):not([for="agree-to-terms"]) {
   margin-bottom: 1rem;
   margin-left: 1rem;
 }
 
-form .form-item label[for$="male"] {
+form .form-item label:not(.gender-opt):not([for="agree-to-terms"])[for$="male"] {
   cursor: pointer;
   color: #928c8c;
 }
 
 form .form-item label[for="agree-to-terms"] {
+  margin-top: 3rem;
   cursor: pointer;
+  text-transform: initial;
 }
 
 form .form-item #gender-div {
@@ -281,5 +308,35 @@ form .form-item #gender-div .gender-opt {
 
 form .form-item #gender-div .gender-opt:first-child {
   margin-right: 1rem;
+}
+
+@media only screen and (max-width: 768px) {
+  form {
+    width: 90%;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  form {
+    width: 100%;
+    border-radius: 0;
+    height: 100vh;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: start;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  input[type="submit"] {
+    width: 100% !important;
+  }
 }
 /*# sourceMappingURL=main.css.map */

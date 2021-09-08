@@ -1,7 +1,6 @@
 @import "./reset";
 @import "./variables";
 @import "./mixins";
-@import "./media-queries";
 
 @keyframes scaleUp {
 	0% {
@@ -49,6 +48,25 @@ form {
 		&:not(:last-child) {
 			margin-bottom: 1.4rem;
 		}
+		.input-div {
+			position: relative;
+			width: 100%;
+			overflow: hidden;
+			border-radius: 1.5rem;
+			.vertical-line {
+				position: absolute;
+				bottom: 0;
+				display: block;
+				width: 0;
+				height: 100%;
+				background-color: $darkBlueClr;
+				opacity: 0.6;
+				@include transition;
+			}
+			input:focus ~ .vertical-line {
+				width: 1rem;
+			}
+		}
 		input.w-100 {
 			width: 100%;
 			padding: 1.6rem 2rem;
@@ -56,11 +74,15 @@ form {
 		}
 		input[type="submit"] {
 			width: 90%;
-			margin: 0 auto;
 			padding: 1.6rem;
 			background-color: $darkBlueClr;
-			border-radius: 1rem;
 			color: $lightClr;
+			border-radius: 1rem;
+			cursor: pointer;
+			@include transition;
+			&:hover {
+				background-color: darken($color: $darkBlueClr, $amount: 5%);
+			}
 		}
 		input[type="checkbox"] {
 			position: absolute;
@@ -74,13 +96,13 @@ form {
 			}
 		}
 		.checkbox-checkmark {
-			position: absolute;
+			position: relative;
+			display: inline-block;
 			top: 5%;
 			left: 0;
 			width: 1.6rem;
 			height: 1.6rem;
 			border-radius: 25%;
-			margin-left: 2rem;
 			background: linear-gradient(145deg, #9c9696, #837e7e);
 			box-shadow: 20px 20px 60px #7c7777, -20px -20px 60px #a8a1a1;
 		}
@@ -122,19 +144,18 @@ form {
 				cursor: pointer;
 			}
 		}
-		input[type="submit"] {
-			cursor: pointer;
-		}
-		label {
+		label:not(.gender-opt):not([for="agree-to-terms"]) {
 			margin-bottom: 1rem;
 			margin-left: 1rem;
 			&[for$="male"] {
 				cursor: pointer;
 				color: $darkGrayClr;
 			}
-			&[for="agree-to-terms"] {
-				cursor: pointer;
-			}
+		}
+		label[for="agree-to-terms"] {
+			margin-top: 3rem;
+			cursor: pointer;
+			text-transform: initial;
 		}
 		#gender-div {
 			@include flexElement(baseline, flex-start);
@@ -150,3 +171,5 @@ form {
 		}
 	}
 }
+
+@import "./media-queries";
