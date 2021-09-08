@@ -55,6 +55,24 @@ form {
 		input[type="radio"] {
 			margin-right: 0.6rem;
 		}
+		input[type="date"] {
+			font-family: "Roboto", sans-serif;
+			color: $darkGrayClr;
+			position: relative;
+			cursor: pointer;
+			&::-webkit-calendar-picker-indicator {
+				position: absolute;
+				top: 0;
+				left: 0;
+				right: 0;
+				bottom: 0;
+				width: auto;
+				height: auto;
+				color: transparent;
+				background: transparent;
+				cursor: pointer;
+			}
+		}
 		label {
 			margin-bottom: 1rem;
 			margin-left: 1rem;

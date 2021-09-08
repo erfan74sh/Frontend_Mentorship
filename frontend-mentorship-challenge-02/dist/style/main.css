@@ -144,6 +144,26 @@ form .form-item input[type="radio"] {
   margin-right: 0.6rem;
 }
 
+form .form-item input[type="date"] {
+  font-family: "Roboto", sans-serif;
+  color: #928c8c;
+  position: relative;
+  cursor: pointer;
+}
+
+form .form-item input[type="date"]::-webkit-calendar-picker-indicator {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: auto;
+  height: auto;
+  color: transparent;
+  background: transparent;
+  cursor: pointer;
+}
+
 form .form-item label {
   margin-bottom: 1rem;
   margin-left: 1rem;
