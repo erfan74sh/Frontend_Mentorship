@@ -210,19 +210,6 @@ form .form-item input[type="checkbox"]:checked ~ .checkbox-checkmark {
           animation: scaleUp 200ms ease-in-out;
 }
 
-form .form-item .checkbox-checkmark {
-  position: relative;
-  display: inline-block;
-  top: 5%;
-  left: 0;
-  width: 1.6rem;
-  height: 1.6rem;
-  border-radius: 25%;
-  background: linear-gradient(145deg, #9c9696, #837e7e);
-  -webkit-box-shadow: 20px 20px 60px #7c7777, -20px -20px 60px #a8a1a1;
-          box-shadow: 20px 20px 60px #7c7777, -20px -20px 60px #a8a1a1;
-}
-
 form .form-item input[type="radio"] {
   position: absolute;
   width: 0;
@@ -234,17 +221,6 @@ form .form-item input[type="radio"]:checked ~ .radio-checkmark {
   background: #3498db;
   -webkit-animation: scaleUp 200ms ease-in-out;
           animation: scaleUp 200ms ease-in-out;
-}
-
-form .form-item .radio-checkmark {
-  position: relative;
-  display: inline-block;
-  width: 1.5rem;
-  height: 1.5rem;
-  margin-right: 0.5rem;
-  border-radius: 100%;
-  background-color: #fff;
-  border: 2px solid #928c8c;
 }
 
 form .form-item input[type="date"] {
@@ -265,6 +241,30 @@ form .form-item input[type="date"]::-webkit-calendar-picker-indicator {
   color: transparent;
   background: transparent;
   cursor: pointer;
+}
+
+form .form-item .checkbox-checkmark {
+  position: relative;
+  display: inline-block;
+  top: 5%;
+  left: 0;
+  width: 1.6rem;
+  height: 1.6rem;
+  border-radius: 25%;
+  background: linear-gradient(145deg, #9c9696, #837e7e);
+  -webkit-box-shadow: 20px 20px 60px #7c7777, -20px -20px 60px #a8a1a1;
+          box-shadow: 20px 20px 60px #7c7777, -20px -20px 60px #a8a1a1;
+}
+
+form .form-item .radio-checkmark {
+  position: relative;
+  display: inline-block;
+  width: 1.5rem;
+  height: 1.5rem;
+  margin-right: 0.5rem;
+  border-radius: 100%;
+  background-color: #fff;
+  border: 2px solid #928c8c;
 }
 
 form .form-item label:not(.gender-opt):not([for="agree-to-terms"]) {

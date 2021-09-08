@@ -2,7 +2,7 @@
 @import "./variables";
 @import "./mixins";
 
-@keyframes scaleUp {
+@include keyFrames(scaleUp) {
 	0% {
 		transform: scale(1);
 	}
@@ -95,17 +95,6 @@ form {
 				animation: scaleUp 200ms ease-in-out;
 			}
 		}
-		.checkbox-checkmark {
-			position: relative;
-			display: inline-block;
-			top: 5%;
-			left: 0;
-			width: 1.6rem;
-			height: 1.6rem;
-			border-radius: 25%;
-			background: linear-gradient(145deg, #9c9696, #837e7e);
-			box-shadow: 20px 20px 60px #7c7777, -20px -20px 60px #a8a1a1;
-		}
 		input[type="radio"] {
 			position: absolute;
 			width: 0;
@@ -115,16 +104,6 @@ form {
 				background: $darkBlueClr;
 				animation: scaleUp 200ms ease-in-out;
 			}
-		}
-		.radio-checkmark {
-			position: relative;
-			display: inline-block;
-			width: 1.5rem;
-			height: 1.5rem;
-			margin-right: 0.5rem;
-			border-radius: 100%;
-			background-color: $lightClr;
-			border: 2px solid $darkGrayClr;
 		}
 		input[type="date"] {
 			font-family: "Roboto", sans-serif;
@@ -144,6 +123,29 @@ form {
 				cursor: pointer;
 			}
 		}
+		// costumize checkmark of radio buttons and checkboxes
+		.checkbox-checkmark {
+			position: relative;
+			display: inline-block;
+			top: 5%;
+			left: 0;
+			width: 1.6rem;
+			height: 1.6rem;
+			border-radius: 25%;
+			background: linear-gradient(145deg, #9c9696, #837e7e);
+			box-shadow: 20px 20px 60px #7c7777, -20px -20px 60px #a8a1a1;
+		}
+		.radio-checkmark {
+			position: relative;
+			display: inline-block;
+			width: 1.5rem;
+			height: 1.5rem;
+			margin-right: 0.5rem;
+			border-radius: 100%;
+			background-color: $lightClr;
+			border: 2px solid $darkGrayClr;
+		}
+		// end costumize checkmark of radio buttons and checkboxes
 		label:not(.gender-opt):not([for="agree-to-terms"]) {
 			margin-bottom: 1rem;
 			margin-left: 1rem;
