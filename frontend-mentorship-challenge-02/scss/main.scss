@@ -3,6 +3,18 @@
 @import "./mixins";
 @import "./media-queries";
 
+@keyframes scaleUp {
+	0% {
+		transform: scale(1);
+	}
+	50% {
+		transform: scale(1.15);
+	}
+	100% {
+		transform: scale(1);
+	}
+}
+
 main {
 	height: 100vh;
 	width: 100vw;
@@ -33,6 +45,7 @@ form {
 	}
 	.form-item {
 		width: 100%;
+		position: relative;
 		&:not(:last-child) {
 			margin-bottom: 1.4rem;
 		}
@@ -50,10 +63,46 @@ form {
 			color: $lightClr;
 		}
 		input[type="checkbox"] {
-			margin-right: 0.3rem;
+			position: absolute;
+			width: 0;
+			height: 0;
+			opacity: 0;
+			&:checked ~ .checkbox-checkmark {
+				background: $darkBlueClr;
+				animation: scaleUp 200ms ease-in-out;
+			}
+		}
+		.checkbox-checkmark {
+			position: absolute;
+			top: 5%;
+			left: 0;
+			width: 1.6rem;
+			height: 1.6rem;
+			border-radius: 25%;
+			margin-left: 2rem;
+			background: linear-gradient(145deg, #9c9696, #837e7e);
+			box-shadow: 20px 20px 60px #7c7777, -20px -20px 60px #a8a1a1;
 		}
 		input[type="radio"] {
-			margin-right: 0.6rem;
+			position: absolute;
+			width: 0;
+			height: 0;
+			opacity: 0;
+			&:checked ~ .radio-checkmark {
+				background: $darkBlueClr;
+				border: none;
+				animation: scaleUp 200ms ease-in-out;
+			}
+		}
+		.radio-checkmark {
+			position: relative;
+			display: inline-block;
+			width: 1.6rem;
+			height: 1.6rem;
+			margin-right: 0.5rem;
+			border-radius: 100%;
+			background-color: $lightClr;
+			border: 2px solid $darkGrayClr;
 		}
 		input[type="date"] {
 			font-family: "Roboto", sans-serif;
@@ -76,10 +125,17 @@ form {
 		label {
 			margin-bottom: 1rem;
 			margin-left: 1rem;
+			&[for$="male"] {
+				color: $darkGrayClr;
+			}
+			&[for="agree-to-terms"] {
+				cursor: pointer;
+			}
 		}
 		#gender-div {
 			@include flexElement(baseline, flex-start);
 			.gender-opt {
+				position: relative;
 				padding: 1.5rem 2.5rem;
 				background-color: $lightGrayClr;
 				border-radius: 1.5rem;

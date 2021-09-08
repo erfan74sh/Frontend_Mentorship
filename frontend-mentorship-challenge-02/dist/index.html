@@ -40,24 +40,30 @@
 				<div class="form-item flex-col">
 					<label for="gender">gender</label>
 					<div id="gender-div">
-						<div class="gender-opt">
+						<label for="male" class="gender-opt">
 							<input type="radio" id="male" name="gender" value="male" />
-							<label for="male">male</label>
-						</div>
-						<div class="gender-opt">
+							<span class="radio-checkmark"></span>
+							male
+						</label>
+						<label for="female" class="gender-opt">
 							<input type="radio" id="female" name="gender" value="female" />
-							<label for="female">female</label>
-						</div>
+							<span class="radio-checkmark"></span>
+							female
+						</label>
 					</div>
 				</div>
 				<div class="form-item flex-center">
-					<input
-						type="checkbox"
-						id="agree-to-terms"
-						name="agree-to-terms"
-						value="agree"
-					/>
-					<label for="agree-to-terms">i accept the terms and conditions</label>
+					<label for="agree-to-terms">
+						<input
+							type="checkbox"
+							id="agree-to-terms"
+							name="agree-to-terms"
+							value="agree"
+						/>
+						<span class="checkbox-checkmark"></span>
+
+						i accept the terms and conditions</label
+					>
 				</div>
 				<div class="form-item flex-center">
 					<input type="submit" id="create-account" value="submit" />
