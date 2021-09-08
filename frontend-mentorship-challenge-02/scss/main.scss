@@ -149,10 +149,6 @@ form {
 		label:not(.gender-opt):not([for="agree-to-terms"]) {
 			margin-bottom: 1rem;
 			margin-left: 1rem;
-			&[for$="male"] {
-				cursor: pointer;
-				color: $darkGrayClr;
-			}
 		}
 		label[for="agree-to-terms"] {
 			margin-top: 3rem;
@@ -165,10 +161,15 @@ form {
 				position: relative;
 				padding: 1.5rem 2.5rem;
 				background-color: $lightGrayClr;
+				color: $darkGrayClr;
 				border-radius: 1.5rem;
+				cursor: pointer;
 				&:first-child {
 					margin-right: 1rem;
 				}
+			}
+			.this-is-checked {
+				color: $darkClr;
 			}
 		}
 	}

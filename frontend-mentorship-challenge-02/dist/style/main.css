@@ -272,11 +272,6 @@ form .form-item label:not(.gender-opt):not([for="agree-to-terms"]) {
   margin-left: 1rem;
 }
 
-form .form-item label:not(.gender-opt):not([for="agree-to-terms"])[for$="male"] {
-  cursor: pointer;
-  color: #928c8c;
-}
-
 form .form-item label[for="agree-to-terms"] {
   margin-top: 3rem;
   cursor: pointer;
@@ -303,11 +298,17 @@ form .form-item #gender-div .gender-opt {
   position: relative;
   padding: 1.5rem 2.5rem;
   background-color: #fbfafa;
+  color: #928c8c;
   border-radius: 1.5rem;
+  cursor: pointer;
 }
 
 form .form-item #gender-div .gender-opt:first-child {
   margin-right: 1rem;
+}
+
+form .form-item #gender-div .this-is-checked {
+  color: #000000;
 }
 
 @media only screen and (max-width: 768px) {
