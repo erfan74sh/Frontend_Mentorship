@@ -2,3 +2,67 @@
 @import "./variables";
 @import "./mixins";
 @import "./media-queries";
+
+main {
+	height: 100vh;
+	width: 100vw;
+	@include flexElement(center, center, column);
+}
+form {
+	width: 400px;
+	padding: 4rem 2rem 2rem 2rem;
+	background-color: $lightBlueClr;
+	border-radius: 2rem;
+	* {
+		font-size: 1.8rem;
+	}
+	.flex-col {
+		@include flexElement(start, center, column);
+	}
+	.flex-row {
+		@include flexElement(baseline, flex-start);
+	}
+	.flex-center {
+		@include flexElement(baseline, center);
+	}
+	.form-item {
+		width: 100%;
+		&:not(:last-child) {
+			margin-bottom: 1.4rem;
+		}
+		input.w-100 {
+			width: 100%;
+			padding: 1.6rem 2rem;
+			border-radius: 1.5rem;
+		}
+		input[type="submit"] {
+			width: 90%;
+			margin: 0 auto;
+			padding: 1.6rem;
+			background-color: $darkBlueClr;
+			border-radius: 1rem;
+			color: $lightClr;
+		}
+		input[type="checkbox"] {
+			margin-right: 0.3rem;
+		}
+		input[type="radio"] {
+			margin-right: 0.6rem;
+		}
+		label {
+			margin-bottom: 1rem;
+			margin-left: 1rem;
+		}
+		#gender-div {
+			@include flexElement(baseline, flex-start);
+			.gender-opt {
+				padding: 1.5rem 2.5rem;
+				background-color: $lightGrayClr;
+				border-radius: 1.5rem;
+				&:first-child {
+					margin-right: 1rem;
+				}
+			}
+		}
+	}
+}

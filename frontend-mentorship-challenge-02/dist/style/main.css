@@ -29,4 +29,148 @@ ul {
 ul li {
   cursor: pointer;
 }
+
+input {
+  border: none;
+  outline: none;
+}
+
+main {
+  height: 100vh;
+  width: 100vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+form {
+  width: 400px;
+  padding: 4rem 2rem 2rem 2rem;
+  background-color: #e5eef3;
+  border-radius: 2rem;
+}
+
+form * {
+  font-size: 1.8rem;
+}
+
+form .flex-col {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+form .flex-row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+form .flex-center {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+form .form-item {
+  width: 100%;
+}
+
+form .form-item:not(:last-child) {
+  margin-bottom: 1.4rem;
+}
+
+form .form-item input.w-100 {
+  width: 100%;
+  padding: 1.6rem 2rem;
+  border-radius: 1.5rem;
+}
+
+form .form-item input[type="submit"] {
+  width: 90%;
+  margin: 0 auto;
+  padding: 1.6rem;
+  background-color: #3498db;
+  border-radius: 1rem;
+  color: #fff;
+}
+
+form .form-item input[type="checkbox"] {
+  margin-right: 0.3rem;
+}
+
+form .form-item input[type="radio"] {
+  margin-right: 0.6rem;
+}
+
+form .form-item label {
+  margin-bottom: 1rem;
+  margin-left: 1rem;
+}
+
+form .form-item #gender-div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+form .form-item #gender-div .gender-opt {
+  padding: 1.5rem 2.5rem;
+  background-color: #fbfafa;
+  border-radius: 1.5rem;
+}
+
+form .form-item #gender-div .gender-opt:first-child {
+  margin-right: 1rem;
+}
 /*# sourceMappingURL=main.css.map */
