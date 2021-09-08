@@ -1,6 +1,6 @@
 # Frontend Mentorship
 
-This Repo is for frontend mentorship projects.
+Here is a brief description of the project we've done, the tools i used in this course and some challenges i've dealt with.
 
 <hr>
 
@@ -11,9 +11,9 @@ I used css flexbox and some hover animations in this app.
 
 - ### [Challenge 01-Travel with us landing page](frontend-mentorship-challenge-01)
 
-**A landing page of an pre-designed website in tourism industry**. This page was created with HTML nad SASS.
-A good practic for challenging my skills in making the page responsive especially with many images in it.
-I also use a little bit of JS for making like image feature.
+  **A landing page of an pre-designed website in tourism industry**. This page was created with HTML nad SASS.
+  A good practic for challenging my skills in making the page responsive especially with many images in it.
+  I also use a little bit of JS for making like image feature.
 
 - ### [Challenge 02-Create-account form](frontend-mentorship-challenge-02)
 
