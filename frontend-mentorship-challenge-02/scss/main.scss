@@ -7,11 +7,17 @@ main {
 	height: 100vh;
 	width: 100vw;
 	@include flexElement(center, center, column);
+	background: url(../images/patrick-ryan-3kUIaB2EPp8-unsplash.jpg) center/cover
+		no-repeat;
 }
 form {
 	width: 400px;
 	padding: 4rem 2rem 2rem 2rem;
-	background-color: $lightBlueClr;
+	background: linear-gradient(
+		135deg,
+		rgba(207, 217, 223, 0.8) 0%,
+		rgba(226, 235, 240, 0.8) 100%
+	);
 	border-radius: 2rem;
 	* {
 		font-size: 1.8rem;
