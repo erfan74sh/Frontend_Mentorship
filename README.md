@@ -2,6 +2,8 @@
 
 This Repo is for frontend mentorship projects.
 
+<hr>
+
 ### [Challenge 00-Task manager](frontend-mentorship-challenge-00)
 
 **A simple task manager** that was designed in Figma and i do it with pure CSS and HTML.
