@@ -176,6 +176,7 @@ form .form-item input[type="checkbox"] {
 
 form .form-item input[type="checkbox"]:checked ~ .checkbox-checkmark {
   background: #3498db;
+  border: 3px solid #fff;
   -webkit-animation: scaleUp 200ms ease-in-out;
           animation: scaleUp 200ms ease-in-out;
 }
@@ -202,7 +203,6 @@ form .form-item input[type="radio"] {
 
 form .form-item input[type="radio"]:checked ~ .radio-checkmark {
   background: #3498db;
-  border: none;
   -webkit-animation: scaleUp 200ms ease-in-out;
           animation: scaleUp 200ms ease-in-out;
 }
@@ -210,8 +210,8 @@ form .form-item input[type="radio"]:checked ~ .radio-checkmark {
 form .form-item .radio-checkmark {
   position: relative;
   display: inline-block;
-  width: 1.6rem;
-  height: 1.6rem;
+  width: 1.5rem;
+  height: 1.5rem;
   margin-right: 0.5rem;
   border-radius: 100%;
   background-color: #fff;
@@ -238,12 +238,17 @@ form .form-item input[type="date"]::-webkit-calendar-picker-indicator {
   cursor: pointer;
 }
 
+form .form-item input[type="submit"] {
+  cursor: pointer;
+}
+
 form .form-item label {
   margin-bottom: 1rem;
   margin-left: 1rem;
 }
 
 form .form-item label[for$="male"] {
+  cursor: pointer;
   color: #928c8c;
 }
 

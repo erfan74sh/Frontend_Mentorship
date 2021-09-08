@@ -69,6 +69,7 @@ form {
 			opacity: 0;
 			&:checked ~ .checkbox-checkmark {
 				background: $darkBlueClr;
+				border: 3px solid $lightClr;
 				animation: scaleUp 200ms ease-in-out;
 			}
 		}
@@ -90,15 +91,14 @@ form {
 			opacity: 0;
 			&:checked ~ .radio-checkmark {
 				background: $darkBlueClr;
-				border: none;
 				animation: scaleUp 200ms ease-in-out;
 			}
 		}
 		.radio-checkmark {
 			position: relative;
 			display: inline-block;
-			width: 1.6rem;
-			height: 1.6rem;
+			width: 1.5rem;
+			height: 1.5rem;
 			margin-right: 0.5rem;
 			border-radius: 100%;
 			background-color: $lightClr;
@@ -122,10 +122,14 @@ form {
 				cursor: pointer;
 			}
 		}
+		input[type="submit"] {
+			cursor: pointer;
+		}
 		label {
 			margin-bottom: 1rem;
 			margin-left: 1rem;
 			&[for$="male"] {
+				cursor: pointer;
 				color: $darkGrayClr;
 			}
 			&[for="agree-to-terms"] {
