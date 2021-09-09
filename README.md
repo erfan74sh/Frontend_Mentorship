@@ -6,8 +6,8 @@ Here is a brief description of the project we've done, the tools i used in this 
 
 - ### [Challenge 00-Task manager](frontend-mentorship-challenge-00)
 
-**A simple task manager** that was designed in Figma and i do it with pure CSS and HTML.
-I used css flexbox and some hover animations in this app.
+  **A simple task manager** that was designed in Figma and i do it with pure CSS and HTML.
+  I used css flexbox and some hover animations in this app.
 
 - ### [Challenge 01-Travel with us landing page](frontend-mentorship-challenge-01)
 
@@ -17,8 +17,8 @@ I used css flexbox and some hover animations in this app.
 
 - ### [Challenge 02-Create-account form](frontend-mentorship-challenge-02)
 
-**A create account form** that done with SASS and HTML. this simple form didn't challenge me on making it responsive but there were some challenges in customize the style of radio buttons and checkbox indicators. Also it was tough to deal with various styles of date inputs on browsers.
-[You can see it live here.](https://frontend-mentorship-challenge-02.netlify.app/)
+  **A create account form** that done with SASS and HTML. this simple form didn't challenge me on making it responsive but there were some challenges in customize the style of radio buttons and checkbox indicators. Also it was tough to deal with various styles of date inputs on browsers.
+  [You can see it live here.](https://frontend-mentorship-challenge-02.netlify.app/)
 
 <hr>
 
