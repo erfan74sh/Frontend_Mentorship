@@ -2,9 +2,9 @@
     "version": 3,
     "mappings": "ACAA,OAAO,CAAC,oJAAI;AAEZ,AAAA,CAAC,CAAC;EACD,MAAM,EAAE,CAAC;EACT,OAAO,EAAE,CAAC;EACV,UAAU,EAAE,UAAU;CACtB;;AAED,AAAA,IAAI,CAAC;EACJ,SAAS,EAAE,KAAK;EAChB,WAAW,EAAE,oBAAoB;EACjC,eAAe,EAAE,MAAM;CACvB",
     "sources": [
-        "../../scss/mai.scss",
+        "../../scss/main.scss",
         "../../scss/_reset.scss"
     ],
     "names": [],
-    "file": "mai.css"
+    "file": "main.css"
 }
