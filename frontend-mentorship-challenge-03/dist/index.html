@@ -19,15 +19,25 @@
 		<header>
 			<h1><a href="#">Travel With Us</a></h1>
 			<nav>
-				<span>
-					Account
-					<i class="fas fa-house-user"></i>
-				</span>
+				<span> Account </span>
+				<i class="fas fa-house-user"></i>
 			</nav>
 		</header>
 		<main>
 			<form action="#">
-				<option value=""></option>
+				<div class="form-item">
+					<label for="region"> Where you go? </label>
+					<input type="search" id="region" placeholder="Select a region" />
+				</div>
+				<div class="form-item">
+					<label for="check-in">Check in </label>
+					<input type="date" id="check-in" placeholder="Add a date" />
+				</div>
+				<div class="form-item">
+					<label for="check-out">Check out </label>
+					<input type="date" id="check-out" placeholder="Add a date" />
+				</div>
+				<button type="submit">search</button>
 			</form>
 		</main>
 	</body>
