@@ -1,1 +1,37 @@
 @import "./reset";
+@import "./mixins";
+@import "./variables";
+
+body {
+	height: 100vh;
+	background: url(../images/SPOILER_sven-fischer-V7WkmXntA8M-unsplash.jpg)
+		center top/ cover no-repeat;
+}
+
+// Header
+header {
+	@include flexElement(center, space-between);
+	width: 100%;
+	padding: 3rem 6rem;
+	h1 {
+		font-family: "Raleway", sans-serif;
+		font-size: 3.6rem;
+		font-weight: 600;
+		color: $greenClr;
+		margin-left: 3rem;
+	}
+	nav {
+		background-color: $lightClr;
+		border-radius: 2.7rem;
+		padding: 1.8rem 2em;
+		span {
+			font-size: 2.4rem;
+			color: $greenClr;
+		}
+		i {
+			font-size: 2.6rem;
+			color: $redClr;
+		}
+	}
+}
+// end Header

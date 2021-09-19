@@ -16,4 +16,51 @@ a {
   text-decoration: none;
   color: inherit;
 }
+
+body {
+  height: 100vh;
+  background: url(../images/SPOILER_sven-fischer-V7WkmXntA8M-unsplash.jpg) center top/cover no-repeat;
+}
+
+header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  width: 100%;
+  padding: 3rem 6rem;
+}
+
+header h1 {
+  font-family: "Raleway", sans-serif;
+  font-size: 3.6rem;
+  font-weight: 600;
+  color: #16a085;
+  margin-left: 3rem;
+}
+
+header nav {
+  background-color: #fff;
+  border-radius: 2.7rem;
+  padding: 1.8rem 2em;
+}
+
+header nav span {
+  font-size: 2.4rem;
+  color: #16a085;
+}
+
+header nav i {
+  font-size: 2.6rem;
+  color: #b75d5d;
+}
 /*# sourceMappingURL=main.css.map */
