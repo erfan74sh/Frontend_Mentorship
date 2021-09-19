@@ -1,0 +1,14 @@
+@mixin flexElement(
+	$aln-items: stretch,
+	$jtf-content: flex-start,
+	$direction: row
+) {
+	display: flex;
+	align-items: $aln-items;
+	justify-content: $jtf-content;
+	flex-direction: $direction;
+}
+
+@mixin transition($timeInMilliSecond: 300ms) {
+	transition: all $timeInMilliSecond ease;
+}
