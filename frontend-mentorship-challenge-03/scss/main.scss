@@ -11,6 +11,7 @@ body {
 // Header
 header {
 	@include flexElement(center, space-between);
+	position: fixed;
 	width: 100%;
 	padding: 3rem 6rem;
 	h1 {
@@ -22,16 +23,56 @@ header {
 	}
 	nav {
 		background-color: $lightClr;
-		border-radius: 2.7rem;
+		border-radius: 2rem;
 		padding: 1.8rem 2em;
 		span {
-			font-size: 2.4rem;
+			font-size: 2rem;
 			color: $greenClr;
 		}
 		i {
-			font-size: 2.6rem;
+			font-size: 2.2rem;
 			color: $redClr;
 		}
 	}
 }
 // end Header
+
+// Main
+main {
+	@include flexElement(center, center);
+	height: 100vh;
+	form {
+		@include flexElement(center, space-between);
+		width: 98%;
+		max-width: 850px;
+		padding: 2.5rem 3rem;
+		background-color: $lightClr;
+		border-radius: 2rem;
+		font-size: 1.8rem;
+		.form-item {
+			@include flexElement(center, center, column);
+			width: 25%;
+			&:nth-child(2) {
+				border-right: 2px solid $darkGrayClr;
+				border-left: 2px solid $darkGrayClr;
+			}
+			label {
+				color: $darkGrayClr;
+			}
+			input {
+				font-size: 1.8rem;
+				margin-top: 1rem;
+				text-align: center;
+			}
+		}
+		button {
+			height: 100%;
+			padding: 1.5rem 4rem;
+			font-size: 2rem;
+			background-color: $greenClr;
+			color: $lightClr;
+			border-radius: 1.3rem;
+		}
+	}
+}
+// end Main

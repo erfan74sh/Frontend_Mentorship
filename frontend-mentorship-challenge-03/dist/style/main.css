@@ -17,6 +17,16 @@ a {
   color: inherit;
 }
 
+input,
+button {
+  border: none;
+  outline: none;
+}
+
+button {
+  cursor: pointer;
+}
+
 body {
   height: 100vh;
   background: url(../images/SPOILER_sven-fischer-V7WkmXntA8M-unsplash.jpg) center top/cover no-repeat;
@@ -36,6 +46,7 @@ header {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
+  position: fixed;
   width: 100%;
   padding: 3rem 6rem;
 }
@@ -50,17 +61,97 @@ header h1 {
 
 header nav {
   background-color: #fff;
-  border-radius: 2.7rem;
+  border-radius: 2rem;
   padding: 1.8rem 2em;
 }
 
 header nav span {
-  font-size: 2.4rem;
+  font-size: 2rem;
   color: #16a085;
 }
 
 header nav i {
-  font-size: 2.6rem;
+  font-size: 2.2rem;
   color: #b75d5d;
+}
+
+main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  height: 100vh;
+}
+
+main form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  width: 98%;
+  max-width: 850px;
+  padding: 2.5rem 3rem;
+  background-color: #fff;
+  border-radius: 2rem;
+  font-size: 1.8rem;
+}
+
+main form .form-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 25%;
+}
+
+main form .form-item:nth-child(2) {
+  border-right: 2px solid #515151;
+  border-left: 2px solid #515151;
+}
+
+main form .form-item label {
+  color: #515151;
+}
+
+main form .form-item input {
+  font-size: 1.8rem;
+  margin-top: 1rem;
+  text-align: center;
+}
+
+main form button {
+  height: 100%;
+  padding: 1.5rem 4rem;
+  font-size: 2rem;
+  background-color: #16a085;
+  color: #fff;
+  border-radius: 1.3rem;
 }
 /*# sourceMappingURL=main.css.map */
