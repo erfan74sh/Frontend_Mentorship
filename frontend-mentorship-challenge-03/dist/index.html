@@ -18,16 +18,27 @@
 	<body>
 		<header>
 			<h1><a href="#">Travel With Us</a></h1>
-			<nav>
+			<button>
 				<span> Account </span>
 				<i class="fas fa-house-user"></i>
-			</nav>
+			</button>
 		</header>
 		<main>
 			<form action="#">
 				<div class="form-item">
 					<label for="region"> Where you go? </label>
-					<input type="search" id="region" placeholder="Select a region" />
+					<input
+						type="search"
+						list="region-list"
+						id="region"
+						placeholder="Select a region"
+					/>
+					<datalist id="region-list">
+						<option value="Tehran"></option>
+						<option value="London"></option>
+						<option value="Paris"></option>
+						<option value="Istanbul"></option>
+					</datalist>
 				</div>
 				<div class="form-item">
 					<label for="check-in">Check in </label>
