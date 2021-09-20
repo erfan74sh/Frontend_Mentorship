@@ -63,6 +63,37 @@ main {
 				font-size: 1.8rem;
 				margin-top: 1rem;
 				text-align: center;
+				&[type="date"] {
+					position: relative;
+					// color: $lightGrayClr;
+					color: $lightClr;
+					&::before {
+						content: attr(placeholder) !important;
+						// display: inline-block;
+						// position: relative;
+						// background-color: red;
+						// z-index: 10;
+						color: $lightGrayClr;
+					}
+					&:focus::before {
+						content: "";
+					}
+					&:valid::before {
+						content: "";
+					}
+					&::-webkit-calendar-picker-indicator {
+						position: absolute;
+						top: 0;
+						left: 0;
+						right: 0;
+						bottom: 0;
+						width: auto;
+						height: auto;
+						color: transparent;
+						background: transparent;
+						cursor: pointer;
+					}
+				}
 			}
 		}
 		button {

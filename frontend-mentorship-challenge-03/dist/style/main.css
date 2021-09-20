@@ -146,6 +146,37 @@ main form .form-item input {
   text-align: center;
 }
 
+main form .form-item input[type="date"] {
+  position: relative;
+  color: #fff;
+}
+
+main form .form-item input[type="date"]::before {
+  content: attr(placeholder) !important;
+  color: #979494;
+}
+
+main form .form-item input[type="date"]:focus::before {
+  content: "";
+}
+
+main form .form-item input[type="date"]:valid::before {
+  content: "";
+}
+
+main form .form-item input[type="date"]::-webkit-calendar-picker-indicator {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: auto;
+  height: auto;
+  color: transparent;
+  background: transparent;
+  cursor: pointer;
+}
+
 main form button {
   height: 100%;
   padding: 1.5rem 4rem;
