@@ -136,3 +136,78 @@ main {
 	}
 }
 // end Main
+
+// Media queries
+@media screen and(max-width:768px) {
+	main {
+		padding: 0 6rem;
+		form {
+			@include flexElement(center, space-between, column);
+			padding: 3.5rem 3rem;
+			.form-item {
+				@include flexElement(center, space-evenly, row);
+				width: 90%;
+				padding: 0 0;
+				&:nth-child(2) {
+					margin: 2rem 0;
+					padding: 2rem 0;
+					border: none;
+					border-top: 2px solid $darkGrayClr;
+					border-bottom: 2px solid $darkGrayClr;
+				}
+				* {
+					width: 40%;
+					margin: 0 !important;
+				}
+			}
+			button {
+				margin-top: 2rem;
+			}
+		}
+	}
+}
+
+@media screen and (max-width: 600px) {
+	header {
+		padding: 3rem 1rem;
+		h1 {
+			margin: 0;
+		}
+		button {
+			padding: 1rem;
+			cursor: pointer !important;
+			border-radius: 1rem;
+			&:hover {
+				border-radius: 1rem;
+			}
+			&::after {
+				width: 0;
+				height: 0;
+			}
+			span {
+				display: none;
+			}
+		}
+	}
+	main {
+		padding: 0 1rem;
+		form {
+			position: relative;
+			top: 5vh;
+			.form-item {
+				flex-direction: column !important;
+				text-align: center;
+				* {
+					width: auto !important;
+				}
+			}
+			button {
+				width: 90%;
+				&:hover::after {
+					width: 95% !important;
+				}
+			}
+		}
+	}
+}
+// end Media queries

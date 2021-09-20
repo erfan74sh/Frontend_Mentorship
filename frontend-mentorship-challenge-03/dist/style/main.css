@@ -227,4 +227,104 @@ main form button:hover::after {
   -webkit-box-shadow: 0 0 8px #16a085;
           box-shadow: 0 0 8px #16a085;
 }
+
+@media screen and (max-width: 768px) {
+  main {
+    padding: 0 6rem;
+  }
+  main form {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding: 3.5rem 3rem;
+  }
+  main form .form-item {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    width: 90%;
+    padding: 0 0;
+  }
+  main form .form-item:nth-child(2) {
+    margin: 2rem 0;
+    padding: 2rem 0;
+    border: none;
+    border-top: 2px solid #515151;
+    border-bottom: 2px solid #515151;
+  }
+  main form .form-item * {
+    width: 40%;
+    margin: 0 !important;
+  }
+  main form button {
+    margin-top: 2rem;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  header {
+    padding: 3rem 1rem;
+  }
+  header h1 {
+    margin: 0;
+  }
+  header button {
+    padding: 1rem;
+    cursor: pointer !important;
+    border-radius: 1rem;
+  }
+  header button:hover {
+    border-radius: 1rem;
+  }
+  header button::after {
+    width: 0;
+    height: 0;
+  }
+  header button span {
+    display: none;
+  }
+  main {
+    padding: 0 1rem;
+  }
+  main form {
+    position: relative;
+    top: 5vh;
+  }
+  main form .form-item {
+    -webkit-box-orient: vertical !important;
+    -webkit-box-direction: normal !important;
+        -ms-flex-direction: column !important;
+            flex-direction: column !important;
+    text-align: center;
+  }
+  main form .form-item * {
+    width: auto !important;
+  }
+  main form button {
+    width: 90%;
+  }
+  main form button:hover::after {
+    width: 95% !important;
+  }
+}
 /*# sourceMappingURL=main.css.map */
