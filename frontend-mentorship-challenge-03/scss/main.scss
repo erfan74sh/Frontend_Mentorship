@@ -63,24 +63,12 @@ main {
 				font-size: 1.8rem;
 				margin-top: 1rem;
 				text-align: center;
+				color: $lightGrayClr;
+				width: 100%;
 				&[type="date"] {
 					position: relative;
-					// color: $lightGrayClr;
-					color: $lightClr;
-					&::before {
-						content: attr(placeholder) !important;
-						// display: inline-block;
-						// position: relative;
-						// background-color: red;
-						// z-index: 10;
-						color: $lightGrayClr;
-					}
-					&:focus::before {
-						content: "";
-					}
-					&:valid::before {
-						content: "";
-					}
+					font-family: "roboto", sans-serif;
+					height: 20.8px;
 					&::-webkit-calendar-picker-indicator {
 						position: absolute;
 						top: 0;
