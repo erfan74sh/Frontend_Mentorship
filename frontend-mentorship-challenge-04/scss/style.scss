@@ -1,0 +1,106 @@
+@import "./variables";
+@import "./reset";
+@import "./mixins";
+
+// global styles
+.btn {
+	height: 5rem;
+	width: 18rem;
+	text-align: center;
+	text-transform: uppercase;
+	font-size: 1.5rem;
+	letter-spacing: 2px;
+}
+.btn-fill {
+	background-color: $darkPurpleClr;
+	color: $whiteClr;
+	box-shadow: 0 25px 40px rgba(0, 0, 0, 0.25);
+}
+
+.btn-outline {
+	background-color: $whiteClr;
+	color: $darkPurpleClr;
+	border: 1px solid $darkPurpleClr;
+}
+
+// section: Header
+header {
+	height: 160vh;
+	background: url("../images/p1.jpg") center 35% / cover no-repeat;
+	nav {
+		padding: 4rem 5rem;
+		font-size: 1.75rem;
+		ul {
+			@include flexElement(center, space-between);
+			#logo {
+				width: 7%;
+				font-size: 2.5rem;
+			}
+			#page-nav {
+				width: 30%;
+				color: $darkPurpleClr;
+			}
+			#profile-nav {
+				width: 7%;
+				color: $darkPurpleClr;
+			}
+		}
+	}
+	h1 {
+		margin-bottom: 9rem;
+		margin-top: 6rem;
+		font-size: 11rem;
+		font-weight: 900;
+		letter-spacing: -2px;
+		color: $darkPurpleClr;
+		text-align: center;
+	}
+	.header-info {
+		width: 25%;
+		margin: 0 10rem;
+		@include flexElement(start, space-between, column);
+		p {
+			margin: 1.5rem 0;
+			font-size: 1.75rem;
+			color: $darkPurpleClr;
+		}
+		div {
+			width: 80%;
+			position: relative;
+			input {
+				width: 100%;
+				height: 3rem;
+				margin: 2rem 0;
+				padding: 2.5rem 2rem;
+				background-color: $whiteClr;
+				box-shadow: 0 0 5px 3px rgba(0, 0, 0, 0.03);
+				&::placeholder {
+					color: $lightGrayClr;
+					font-weight: 500;
+				}
+			}
+			span {
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				position: absolute;
+				right: 0;
+				top: 50%;
+				transform: translate(-25%, -50%);
+				width: 3.25rem;
+				height: 3.25rem;
+				background-color: $darkPurpleClr;
+				cursor: pointer;
+				i {
+					font-size: 2rem;
+					color: $whiteClr;
+					font-weight: 200;
+				}
+			}
+		}
+		button {
+			margin-top: 8rem;
+		}
+	}
+}
+// end section: Header
