@@ -1,0 +1,206 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@100;300;400;500;600;700;800;900&family=Roboto:wght@100;300;400;500;700;900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+*::before {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+*::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  font-family: "Roboto", sans-serif;
+  scroll-behavior: smooth;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+input,
+button {
+  border: none;
+  outline: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+li {
+  list-style: none;
+}
+
+.btn {
+  height: 5rem;
+  width: 18rem;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 1.5rem;
+  letter-spacing: 2px;
+}
+
+.btn-fill {
+  background-color: #453332;
+  color: #fff;
+  -webkit-box-shadow: 0 25px 40px rgba(0, 0, 0, 0.25);
+          box-shadow: 0 25px 40px rgba(0, 0, 0, 0.25);
+}
+
+.btn-outline {
+  background-color: #fff;
+  color: #453332;
+  border: 1px solid #453332;
+}
+
+header {
+  height: 160vh;
+  background: url("../images/p1.jpg") center 35%/cover no-repeat;
+}
+
+header nav {
+  padding: 4rem 5rem;
+  font-size: 1.75rem;
+}
+
+header nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+header nav ul #logo {
+  width: 7%;
+  font-size: 2.5rem;
+}
+
+header nav ul #page-nav {
+  width: 30%;
+  color: #453332;
+}
+
+header nav ul #profile-nav {
+  width: 7%;
+  color: #453332;
+}
+
+header h1 {
+  margin-bottom: 9rem;
+  margin-top: 6rem;
+  font-size: 11rem;
+  font-weight: 900;
+  letter-spacing: -2px;
+  color: #453332;
+  text-align: center;
+}
+
+header .header-info {
+  width: 25%;
+  margin: 0 10rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+header .header-info p {
+  margin: 1.5rem 0;
+  font-size: 1.75rem;
+  color: #453332;
+}
+
+header .header-info div {
+  width: 80%;
+  position: relative;
+}
+
+header .header-info div input {
+  width: 100%;
+  height: 3rem;
+  margin: 2rem 0;
+  padding: 2.5rem 2rem;
+  background-color: #fff;
+  -webkit-box-shadow: 0 0 5px 3px rgba(0, 0, 0, 0.03);
+          box-shadow: 0 0 5px 3px rgba(0, 0, 0, 0.03);
+}
+
+header .header-info div input::-webkit-input-placeholder {
+  color: #9e9e9e;
+  font-weight: 500;
+}
+
+header .header-info div input:-ms-input-placeholder {
+  color: #9e9e9e;
+  font-weight: 500;
+}
+
+header .header-info div input::-ms-input-placeholder {
+  color: #9e9e9e;
+  font-weight: 500;
+}
+
+header .header-info div input::placeholder {
+  color: #9e9e9e;
+  font-weight: 500;
+}
+
+header .header-info div span {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: absolute;
+  right: 0;
+  top: 50%;
+  -webkit-transform: translate(-25%, -50%);
+          transform: translate(-25%, -50%);
+  width: 3.25rem;
+  height: 3.25rem;
+  background-color: #453332;
+  cursor: pointer;
+}
+
+header .header-info div span i {
+  font-size: 2rem;
+  color: #fff;
+  font-weight: 200;
+}
+
+header .header-info button {
+  margin-top: 8rem;
+}
+/*# sourceMappingURL=style.css.map */
