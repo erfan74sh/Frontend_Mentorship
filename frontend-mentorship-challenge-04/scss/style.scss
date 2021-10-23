@@ -310,4 +310,66 @@ main {
 		}
 	}
 	// end section: best-taste
+
+	// section: customers reveiw
+	.customers-review {
+		background-color: $lightPinkClr;
+		padding: 12rem;
+		padding-bottom: 14rem;
+		&__header {
+			width: 60%;
+			margin: 0 auto;
+			text-align: center;
+			h2 {
+				margin-bottom: 1.6rem;
+				line-height: 7rem;
+			}
+		}
+		&__carousel {
+			@include flexElement(stretch, space-between);
+			margin-top: 5rem;
+			height: 39rem;
+			&__card {
+				@include flexElement(start, flex-start, column);
+				height: 100%;
+				width: 31%;
+				padding: 5rem 3rem;
+				background-color: #fff;
+				&__stars {
+					margin-bottom: 4rem;
+					* {
+						color: $yellowClr;
+					}
+				}
+				&__comment {
+					color: $lightGrayClr;
+					font-size: 1.8rem;
+					line-height: 3rem;
+					flex-grow: 1;
+				}
+				&__profile {
+					@include flexElement(center, flex-start);
+					&__image {
+						margin-right: 2rem;
+						width: 5rem;
+						height: 5rem;
+						border-radius: 50%;
+						object-fit: cover;
+					}
+					&__title {
+						@include flexElement(start, center, column);
+						&__name {
+							color: $GrayClr;
+							font-size: 1.8rem;
+						}
+						&__job {
+							color: $lightGrayClr;
+							font-size: 1.6rem;
+						}
+					}
+				}
+			}
+		}
+	}
+	// end section: customers reveiw
 }
