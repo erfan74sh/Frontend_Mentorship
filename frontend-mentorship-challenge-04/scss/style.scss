@@ -272,4 +272,42 @@ main {
 		}
 	}
 	// end section: overall status
+
+	// section: best-taste
+	.best-taste {
+		@include flexElement(stretch, space-between);
+		padding: 0 12rem;
+		padding-bottom: 12rem;
+		&__col {
+			width: 46%;
+			@include flexElement(start, space-between, column);
+			padding: 8rem 0;
+			p {
+				line-height: 3.2rem;
+			}
+			&__title {
+				width: 80%;
+			}
+		}
+		&__image {
+			width: 44%;
+			height: 65rem;
+			background-color: $darkPinkClr;
+			position: relative;
+			img {
+				position: relative;
+				object-fit: cover;
+				width: 100%;
+				height: 100%;
+				transform: translate(5%, -5%);
+				transition: 200ms;
+			}
+			&:hover {
+				img {
+					transform: translate(0, 0);
+				}
+			}
+		}
+	}
+	// end section: best-taste
 }
