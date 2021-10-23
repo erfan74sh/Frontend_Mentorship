@@ -22,6 +22,16 @@
 	color: $darkPurpleClr;
 	border: 1px solid $darkPurpleClr;
 }
+.text-primary {
+	color: $lightGrayClr;
+	font-size: 1.8rem;
+	line-height: 2.5rem;
+}
+.text-secondary {
+	color: $lightGrayClr;
+	font-size: 1.6rem;
+	line-height: 3.2rem;
+}
 
 // section: Header
 header {
@@ -104,3 +114,66 @@ header {
 	}
 }
 // end section: Header
+
+main {
+	// section: Lenders
+	.lenders {
+		padding: 4rem 6rem;
+		background-color: $lightPinkClr;
+		&__title {
+			margin-bottom: 5rem;
+			font-size: 2.5rem;
+			font-weight: 500;
+			letter-spacing: 2px;
+			text-align: center;
+			text-transform: uppercase;
+			color: $darkPurpleClr;
+		}
+		&__logoes {
+			@include flexElement(center, space-evenly, row);
+		}
+	}
+	// end section: Lenders
+
+	// section: about us
+	.about-us {
+		@include flexElement(start, space-between);
+		padding: 9rem 12rem;
+		&__col {
+			width: 46%;
+			&__title {
+				margin-top: 3rem;
+				font-size: 8rem;
+				color: $darkPurpleClr;
+				font-weight: 500;
+			}
+			&__image {
+				width: 100%;
+				height: 65rem;
+				overflow: hidden;
+				img {
+					object-fit: cover;
+					height: 100%;
+					width: 100%;
+				}
+			}
+			p {
+				margin: 2rem 0;
+			}
+			.text-primary {
+				width: 75%;
+			}
+			.text-secondary {
+				margin: 3.5rem 0;
+			}
+			.btn-fill {
+				margin-top: 2rem;
+				margin-bottom: 6rem;
+			}
+			.btn-outline {
+				margin-top: 1rem;
+			}
+		}
+	}
+	// end section: about us
+}
