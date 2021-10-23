@@ -42,6 +42,12 @@ h3 {
 	color: $darkPurpleClr;
 	font-weight: 400;
 }
+h4 {
+	font-size: 2.8rem;
+	font-weight: 400;
+	color: $darkPurpleClr;
+	text-transform: capitalize;
+}
 
 // end global style
 
@@ -373,3 +379,57 @@ main {
 	}
 	// end section: customers reveiw
 }
+
+// section: footer
+footer {
+	padding: 32rem 12rem;
+	padding-bottom: 0;
+	@include flexElement(start, center);
+	flex-wrap: wrap;
+	.footer-info {
+		width: 50%;
+		h4 {
+			margin-bottom: 2.5rem;
+		}
+		p {
+			width: 50%;
+			margin-bottom: 6rem;
+			line-height: 3.2rem;
+		}
+		&__socials {
+			display: flex;
+			&__item {
+				@include flexElement(center, center);
+				width: 3.6rem;
+				height: 3.6rem;
+				margin-right: 2.5rem;
+				border-radius: 50%;
+				background-color: $darkPurpleClr;
+				color: #fff;
+			}
+		}
+	}
+	.footer-nav {
+		@include flexElement(start, space-between);
+		width: 50%;
+		&__lists {
+			h4 {
+				margin-bottom: 2.5rem;
+			}
+			ul li {
+				margin-bottom: 1.4rem;
+				font-size: 1.8rem;
+				color: $lightGrayClr;
+				text-transform: capitalize;
+			}
+		}
+	}
+	.copyright {
+		width: 100%;
+		margin-top: 2.8rem;
+		padding: 3rem 0;
+		border-top: 1px solid #e0e0e0;
+		text-align: center;
+	}
+}
+// end section: footer
