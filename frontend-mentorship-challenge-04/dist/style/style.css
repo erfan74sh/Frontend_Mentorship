@@ -63,6 +63,18 @@ li {
   border: 1px solid #453332;
 }
 
+.text-primary {
+  color: #9e9e9e;
+  font-size: 1.8rem;
+  line-height: 2.5rem;
+}
+
+.text-secondary {
+  color: #9e9e9e;
+  font-size: 1.6rem;
+  line-height: 3.2rem;
+}
+
 header {
   height: 160vh;
   background: url("../images/p1.jpg") center 35%/cover no-repeat;
@@ -202,5 +214,98 @@ header .header-info div span i {
 
 header .header-info button {
   margin-top: 8rem;
+}
+
+main .lenders {
+  padding: 4rem 6rem;
+  background-color: #fef6f0;
+}
+
+main .lenders__title {
+  margin-bottom: 5rem;
+  font-size: 2.5rem;
+  font-weight: 500;
+  letter-spacing: 2px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #453332;
+}
+
+main .lenders__logoes {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+main .about-us {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  padding: 9rem 12rem;
+}
+
+main .about-us__col {
+  width: 46%;
+}
+
+main .about-us__col__title {
+  margin-top: 3rem;
+  font-size: 8rem;
+  color: #453332;
+  font-weight: 500;
+}
+
+main .about-us__col__image {
+  width: 100%;
+  height: 70rem;
+  overflow: hidden;
+}
+
+main .about-us__col__image img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  height: 100%;
+  width: 100%;
+}
+
+main .about-us__col p {
+  margin: 2rem 0;
+}
+
+main .about-us__col .text-primary {
+  width: 75%;
+}
+
+main .about-us__col .text-secondary {
+  margin: 3.5rem 0;
+}
+
+main .about-us__col .btn-fill {
+  margin-top: 2rem;
+  margin-bottom: 6rem;
+}
+
+main .about-us__col .btn-outline {
+  margin-top: 1rem;
 }
 /*# sourceMappingURL=style.css.map */
