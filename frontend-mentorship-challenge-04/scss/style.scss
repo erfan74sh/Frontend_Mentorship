@@ -241,4 +241,35 @@ main {
 		}
 	}
 	// end section: products
+
+	// section: overall status
+	.overall-status {
+		@include flexElement(center, space-between);
+		margin: 10rem 0;
+		padding: 4rem 15rem;
+		background-color: #fef6f0c2;
+		height: 20rem;
+		&__item {
+			@include flexElement(center, center, column);
+			span {
+				&:first-child {
+					font-size: 5rem;
+					font-weight: 600;
+					color: $darkPurpleClr;
+					margin-bottom: 1.6rem;
+					text-transform: capitalize;
+				}
+				&:last-child {
+					color: $lightGrayClr;
+					font-size: 2rem;
+				}
+			}
+		}
+		&__divider {
+			width: 2px;
+			height: 100%;
+			background-color: $darkPurpleClr;
+		}
+	}
+	// end section: overall status
 }

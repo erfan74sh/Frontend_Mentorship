@@ -439,4 +439,59 @@ main .products__col__buttons {
       -ms-flex-direction: row;
           flex-direction: row;
 }
+
+main .overall-status {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  margin: 10rem 0;
+  padding: 4rem 15rem;
+  background-color: #fef6f0c2;
+  height: 20rem;
+}
+
+main .overall-status__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+main .overall-status__item span:first-child {
+  font-size: 5rem;
+  font-weight: 600;
+  color: #453332;
+  margin-bottom: 1.6rem;
+  text-transform: capitalize;
+}
+
+main .overall-status__item span:last-child {
+  color: #9e9e9e;
+  font-size: 2rem;
+}
+
+main .overall-status__divider {
+  width: 2px;
+  height: 100%;
+  background-color: #453332;
+}
 /*# sourceMappingURL=style.css.map */
