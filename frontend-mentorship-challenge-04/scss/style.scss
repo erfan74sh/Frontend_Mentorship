@@ -49,11 +49,24 @@ h4 {
 	text-transform: capitalize;
 }
 
+@keyframes changeColor {
+	0% {
+		background-color: $orangeClr;
+	}
+	50% {
+		background-color: rgba(204, 114, 69, 0.9);
+	}
+	100% {
+		background-color: $orangeClr;
+	}
+}
+
 // end global style
 
 // section: Header
 header {
 	height: 140vh;
+	position: relative;
 	background: url("../images/p1.jpg") 50% 10rem / cover no-repeat,
 		url("../images/p1.jpg") 50% 0 / cover no-repeat;
 	nav {
@@ -129,6 +142,65 @@ header {
 		}
 		button {
 			margin-top: 6rem;
+		}
+	}
+	.image-info {
+		position: absolute;
+		display: flex;
+		align-items: baseline;
+		left: 59%;
+		top: 57%;
+		&__btn {
+			position: relative;
+			width: 7rem;
+			height: 7rem;
+			margin-right: 1.8rem;
+			border-radius: 50%;
+			background-color: $orangeClr;
+			color: $whiteClr;
+			font-size: 2rem;
+			font-weight: 500;
+			transition: 300ms;
+			animation-name: changeColor;
+			animation-duration: 700ms;
+			animation-timing-function: linear;
+			animation-iteration-count: infinite;
+			animation-direction: alternate;
+			&:hover {
+				background-color: rgba(204, 114, 69, 0.9);
+				animation-play-state: paused;
+			}
+			&:hover + .image-info__description {
+				opacity: 1;
+			}
+		}
+		&__description {
+			transition: 400ms;
+			opacity: 0;
+			h5 {
+				font-size: 1.6rem;
+				color: $darkPurpleClr;
+				font-weight: 500;
+				margin-bottom: 2rem;
+				position: relative;
+				&::before {
+					content: "";
+					display: inline-block;
+					position: relative;
+					width: 13rem;
+					height: 2px;
+					bottom: 0.3rem;
+					margin-right: 1rem;
+					background-color: $darkPurpleClr;
+				}
+			}
+			p {
+				margin-left: 14rem;
+				font-size: 1.6rem;
+				line-height: 2.5rem;
+				color: $darkPurpleClr;
+				// font-weight: 500;
+			}
 		}
 	}
 }

@@ -94,8 +94,33 @@ h4 {
   text-transform: capitalize;
 }
 
+@-webkit-keyframes changeColor {
+  0% {
+    background-color: rgba(204, 114, 69, 0.8);
+  }
+  50% {
+    background-color: rgba(204, 114, 69, 0.9);
+  }
+  100% {
+    background-color: rgba(204, 114, 69, 0.8);
+  }
+}
+
+@keyframes changeColor {
+  0% {
+    background-color: rgba(204, 114, 69, 0.8);
+  }
+  50% {
+    background-color: rgba(204, 114, 69, 0.9);
+  }
+  100% {
+    background-color: rgba(204, 114, 69, 0.8);
+  }
+}
+
 header {
   height: 140vh;
+  position: relative;
   background: url("../images/p1.jpg") 50% 10rem/cover no-repeat, url("../images/p1.jpg") 50% 0/cover no-repeat;
 }
 
@@ -233,6 +258,84 @@ header .header-info div span i {
 
 header .header-info button {
   margin-top: 6rem;
+}
+
+header .image-info {
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+  left: 59%;
+  top: 57%;
+}
+
+header .image-info__btn {
+  position: relative;
+  width: 7rem;
+  height: 7rem;
+  margin-right: 1.8rem;
+  border-radius: 50%;
+  background-color: rgba(204, 114, 69, 0.8);
+  color: #fff;
+  font-size: 2rem;
+  font-weight: 500;
+  -webkit-transition: 300ms;
+  transition: 300ms;
+  -webkit-animation-name: changeColor;
+          animation-name: changeColor;
+  -webkit-animation-duration: 700ms;
+          animation-duration: 700ms;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-direction: alternate;
+          animation-direction: alternate;
+}
+
+header .image-info__btn:hover {
+  background-color: rgba(204, 114, 69, 0.9);
+  -webkit-animation-play-state: paused;
+          animation-play-state: paused;
+}
+
+header .image-info__btn:hover + .image-info__description {
+  opacity: 1;
+}
+
+header .image-info__description {
+  -webkit-transition: 400ms;
+  transition: 400ms;
+  opacity: 0;
+}
+
+header .image-info__description h5 {
+  font-size: 1.6rem;
+  color: #453332;
+  font-weight: 500;
+  margin-bottom: 2rem;
+  position: relative;
+}
+
+header .image-info__description h5::before {
+  content: "";
+  display: inline-block;
+  position: relative;
+  width: 13rem;
+  height: 2px;
+  bottom: 0.3rem;
+  margin-right: 1rem;
+  background-color: #453332;
+}
+
+header .image-info__description p {
+  margin-left: 14rem;
+  font-size: 1.6rem;
+  line-height: 2.5rem;
+  color: #453332;
 }
 
 main .lenders {
