@@ -95,8 +95,8 @@ h4 {
 }
 
 header {
-  height: 160vh;
-  background: url("../images/p1.jpg") center 35%/cover no-repeat;
+  height: 140vh;
+  background: url("../images/p1.jpg") 50% 10rem/cover no-repeat, url("../images/p1.jpg") 50% 0/cover no-repeat;
 }
 
 header nav {
@@ -136,7 +136,7 @@ header nav ul #profile-nav {
 }
 
 header h1 {
-  margin-bottom: 9rem;
+  margin-bottom: 12rem;
   margin-top: 6rem;
   font-size: 11rem;
   font-weight: 900;
@@ -166,6 +166,7 @@ header .header-info {
 header .header-info p {
   margin: 1.5rem 0;
   font-size: 1.75rem;
+  line-height: 2.8rem;
   color: #453332;
 }
 
@@ -176,9 +177,8 @@ header .header-info div {
 
 header .header-info div input {
   width: 100%;
-  height: 3rem;
   margin: 2rem 0;
-  padding: 2.5rem 2rem;
+  padding: 2rem 2rem;
   background-color: #fff;
   -webkit-box-shadow: 0 0 5px 3px rgba(0, 0, 0, 0.03);
           box-shadow: 0 0 5px 3px rgba(0, 0, 0, 0.03);
@@ -232,7 +232,7 @@ header .header-info div span i {
 }
 
 header .header-info button {
-  margin-top: 8rem;
+  margin-top: 6rem;
 }
 
 main .lenders {
