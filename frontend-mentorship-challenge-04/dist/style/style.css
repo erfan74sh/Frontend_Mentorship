@@ -601,8 +601,37 @@ main .customers-review__carousel {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  margin-top: 5rem;
+  position: relative;
+  margin-top: 7rem;
   height: 39rem;
+}
+
+main .customers-review__carousel__handler {
+  position: absolute;
+  top: -10rem;
+  right: 0;
+}
+
+main .customers-review__carousel__handler__btn {
+  width: 5rem;
+  height: 5rem;
+  border-radius: 50%;
+  border: 1px solid #453332;
+  background-color: transparent;
+  color: #453332;
+}
+
+main .customers-review__carousel__handler__btn i {
+  font-weight: 400;
+}
+
+main .customers-review__carousel__handler__btn:hover {
+  background-color: #453332;
+  color: #fff;
+}
+
+main .customers-review__carousel__handler__btn:first-child {
+  margin-right: 2rem;
 }
 
 main .customers-review__carousel__card {

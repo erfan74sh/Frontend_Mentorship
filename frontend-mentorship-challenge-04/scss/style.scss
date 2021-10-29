@@ -333,8 +333,32 @@ main {
 		}
 		&__carousel {
 			@include flexElement(stretch, space-between);
-			margin-top: 5rem;
+			position: relative;
+			margin-top: 7rem;
 			height: 39rem;
+			&__handler {
+				position: absolute;
+				top: -10rem;
+				right: 0;
+				&__btn {
+					width: 5rem;
+					height: 5rem;
+					border-radius: 50%;
+					border: 1px solid $darkPurpleClr;
+					background-color: transparent;
+					color: $darkPurpleClr;
+					i {
+						font-weight: 400;
+					}
+					&:hover {
+						background-color: $darkPurpleClr;
+						color: $whiteClr;
+					}
+					&:first-child {
+						margin-right: 2rem;
+					}
+				}
+			}
 			&__card {
 				@include flexElement(start, flex-start, column);
 				height: 100%;
